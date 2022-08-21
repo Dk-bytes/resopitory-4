@@ -1,0 +1,109 @@
+<!DOCTYPE html><!--Darlene-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UAT space program </title><!-- title of mission-->   
+    <!--link to javascript file-->
+    <script src="tableDOM.js"></script>
+    <!--link HTML with css file-->
+    <link rel="stylesheet" type = "text/css" href="tableDOM.css">
+    <Title>table</Title><!--title to specific assignment-->
+    <!--link to js file-->
+  
+</head>
+<body>
+    
+
+  
+    <audio controls><!--make audio controls for miusic-->
+        <source src="hail_to_the_chief.mp3" type="audio/mpeg"></source><!--add mpeg-->
+     </audio>   
+    
+    <!--add an image-->
+    <img align = "left" Src = "UATSpace-1.png" /> <!--insert image of left--> 
+    <br><!--break in page-->
+    <br><!--break in page-->
+    <br><!--break in page-->
+    <h1><!--making required header-->
+        <b> UAT Space Program</b><!--making text bold-->
+    </h1>
+<br>
+<br>
+<br>
+<br>
+<br>     <p id="reads">"<b> Computing...</b>"</p><!--paragraph Computing...-->
+
+    <table class="table top">
+        <tr><!-- tr ,how many rows in the table-->
+            <td>
+                
+            </td>
+        </tr>
+    </table> <!-- making table-->
+    <table id ="data" border = "2" width = "75%"><!--how much of the page table will take up-->
+        <col style = "width: 40%"><!--column with for table-->
+        <col style = "width: 40%"><!--column with for table-->
+       <thead>
+            <tr style = "font-family: Pristina"><!--add font style to table-->  
+            <th><b>Date Type</b></th><!--making 1st table header and text bold-->
+            <th><b>Reading</b></th><!--making 2nd table header and text bold-->
+            
+        </tr>    
+       </thead>
+       <tbody style=" font-weight: bolder;"><!--Make table font bolder-->
+        <tr id="row 1"><td>Time elapsed:</td><td>15 seconds</td></tr><!--creating and adding content in row 1 -->
+        <tr id="row 2"><td>Latitude:</td><td>0</td></tr><!--creating and adding content in row 2 -->
+        <tr id="row 3"><td>Longitude:</td><td>0</td></tr><!--creating and adding content in row 3 -->
+        <tr id="row 4"><td>GPS Altitude:</td><td>0</td></tr><!--creating and adding content in row 4 -->
+        <tr id="row 5"><td>BMP Sensor Altitude:</td><td>30383.04</td></tr><!--creating and adding content in row 5 -->
+        <tr id="row 6"><td>BMP Sensor Pressure:</td><td>2.34</td></tr><!--creating and adding content in row 6 -->
+        <tr id="row 7"><td>BMP Sensor Temperature:</td><td>0</td></tr><!--creating and adding content in row 7 -->
+        <tr id="row 8"><td>Digital Sensor Temperature:</td><td>24.12</td></tr><!--creating and adding content in row 8 -->
+        <tr id="row 9"><td>CSS Sensor Temperature:</td><td>25</td></tr><!--creating and adding content in row 9 -->
+        <tr id="row 10"><td>CSS Sensor eCO2:</td><td>400</td></tr><!--creating and adding content in row 10 -->
+        <tr id="row 11"><td>CSS Sensor TVOC:</td><td>0</td></tr><!--creating and adding content in row 11 -->
+        <tr id="row 12"><td>UV:</td><td>0</td></tr><!--creating and adding content in row 12 -->
+        <tr id="row 13"><td>Accel X:</td><td>-0.87</td></tr><!--creating and adding content in row 13 -->
+        <tr id="row 14"><td>Accel Y:</td><td>-0.02</td></tr><!--creating and adding content in row 14 -->
+        <tr id="row 15"><td>Accel Z:</td><td>9.61</td></tr><!--creating and adding content in row 15 -->
+        <tr id="row 16"><td>Magnetic X:</td><td>0.13</td></tr><!--creating and adding content in row 16 -->
+        <tr id="row 17"><td>Magnetic Y:</td><td>0.57</td></tr><!--creating and adding content in row 17 -->
+        <tr id="row 18"><td>Magnetic Z:</td><td>-0.24</td></tr><!--creating and adding content in row 18 -->
+        <tr id="row 19"><td>Gyro X:</td><td>4.66</td></tr><!--creating and adding content in row 19 -->
+        <tr id="row 20"><td>Gyro Y:</td><td>0.01</td></tr><!--creating and adding content in row 20 -->
+        <tr id="row 21"><td>Gyro Z:</td><td>-0.4</td></tr><!--creating and adding content in row 21 -->
+        
+        
+    </table>
+
+   <br><!--break in page-->
+   <br><!--break in page-->
+    
+    
+    <!--make start and stop button-->
+    <button onClick="Initial()" id="startButton">Start</button> <!--make start button with function Initial-->
+    <button onClick="halt()" id="stopButton" disabled = true> Stop </button><!--make stop button with fuction Halt-->
+    <br><!--break in page-->
+    <br><!--make onclick button for Hail to the Chief-->
+    <button class="musicChief" onclick ="Chief();"> Hail to the Chief </button>
+
+  <h2><!--second header-->
+    Brought to you by:
+  </h2>
+  <p id="people">[]</p><!--paragraph id for array-->
+    <script>
+        const names =[];//make array
+        names[0]= "MaryGibbson";//make array 0
+        names[1]= "BerryWitiker";//make array 1
+        names[2]= "KimberlyThompson";//make array 2
+        names[3]= "CarlPulston";//make array 3
+        document.getElementById("people").innerHTML =names;// put array in id on hyml
+
+    </script><!--end script-->
+    <br><!--break-->
+      
+
+</body><!--end body-->
+</html><!--end html-->

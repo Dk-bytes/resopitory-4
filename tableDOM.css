@@ -1,0 +1,56 @@
+*
+{
+     font-family: Pristina;
+    
+}
+
+
+
+
+
+body {
+    height: 400px;
+    background-image: linear-gradient(to right,white, lightskyblue);  
+    margin:25px
+    
+}
+
+h1 {
+    color: #3333bb;
+    }
+
+h6 {
+    font-size: 20px;
+    color: (117,118,225);
+    }
+    
+
+button {
+    padding: 16px 30px;
+    margin: 6px 3px;
+    border:#3333bb;
+    border-radius: 5px;
+    height: 60px;
+    background-image: radial-gradient(rgb(0, 255, 251),rgb(47, 203, 42));
+    width: 150px;
+    text-decoration-color: rgb(6, 6, 84);
+    text-align: center;
+    font-size:30px;
+    cursor: pointer;
+}
+
+.musicChief{
+    width:250px;
+    height:60px;
+    border-radius:5px;
+    text-align: center;
+    font-size:30px;
+    cursor: pointer;
+
+
+}
+
+
+
+
+
